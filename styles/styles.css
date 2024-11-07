@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -23,6 +27,9 @@ body {
   color: #333333;
   background-color: #f2f2f2;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .button {
@@ -122,13 +129,19 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
   text-align: center;
 }
 
-.subscribe-to-description {
+.subscribe-to-title-main {
   color: #ffffff;
+}
+
+.subscribe-to-description {
   text-align: center;
+}
+
+.subscribe-to-description-main {
+  color: #ffffff;
 }
 
 .field {
@@ -170,7 +183,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -308,4 +320,281 @@ body {
 
 .page-footer {
   background-color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 30px;
+  width: 1060px;
+  padding-left: 70px;
+  padding-right: 70px;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+}
+
+.container-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation-link {
+  display: block;
+  margin: 0;
+  padding: 20px 16px;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation-item .button {
+  width: 160px;
+  padding: 8px 34px;
+}
+
+.hero {
+  margin: 0;
+  padding: 51px 371px 82px;
+}
+
+.block-text-center {
+  margin: 0;
+  padding: 69px 290px;
+}
+
+.main-advantages {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-advantages-text {
+  width: 400px;
+  padding: 102px 85px;
+  box-sizing: border-box;
+}
+
+.advantage-img {
+  display: block;
+  width: 800px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 400px;
+  padding: 112.5px 85px;
+  box-sizing: border-box;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 400px;
+  padding: 81px 85px;
+  box-sizing: border-box;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 592px;
+  padding: 96px 304px;
+}
+
+.call-to-action .button {
+  padding: 8px 50px;
+}
+
+.subscribe-to-letters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 684px;
+  padding: 96px 258px 104px;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px;
+  align-items: center;
+}
+
+.footer-socials {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  width: 48px;
+}
+
+.contacts-phone {
+  margin: 0;
+  padding: 0;
+  width: 335px;
+}
+
+.html-academy-logo {
+  margin: 0;
+  padding: 0;
+  width: 115px;
+  align-self: center;
+}
+
+.inner-header {
+  padding: 35px 70px 70px;
+}
+
+.sorting-container {
+  display: flex;
+  width: 1060px;
+}
+
+.sorting-left-column {
+  min-width: 151px;
+  margin: 0;
+  padding: 0;
+  margin-right: 70px;
+}
+
+.sorting-middle-column {
+  min-width: 151px;
+  margin: 0;
+  padding: 0;
+  margin-right: 140.15px;
+}
+
+.sorting-right-column {
+  width: 549px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sorting-price {
+  width: 288px;
+  margin: 0;
+  padding: 0;
+  margin-right: 70px;
+}
+
+.sorting-buttons {
+  max-width: 191px;
+}
+
+.container-filter {
+  display: flex;
+  align-items: center;
+  width: 1060px;
+  padding: 50px 70px 40px;
+}
+
+.catalog-title {
+  min-width: 338px;
+  margin-right: 200px;
+}
+
+.select-control {
+  width: 292px;
+  margin-right: 70px;
+}
+
+.view-type {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-width: 160px;
+  flex-wrap: wrap;
+}
+
+.view-option {
+  width: 48px;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.accommodation-list {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  margin: 0;
+  gap: 20px;
+  padding: 40px 70px 20px;
+}
+
+.accommodation-card {
+  width: 300px;
+  padding: 20px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  padding: 40px 70px 60px;
+  flex-wrap: wrap;
+}
+
+.pagination-link {
+  display: block;
+  width: 60px;
+  margin-right: 8px;
+  padding: 12px 18px;
+  box-sizing: border-box;
+}
+
+.pagination-more {
+  display: block;
+  width: 60px;
+  margin-right: 8px;
+  padding: 17px 20px;
+  box-sizing: border-box;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
