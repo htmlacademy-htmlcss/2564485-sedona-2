@@ -52,6 +52,11 @@ body {
   text-decoration: none;
 }
 
+.navigation-item .button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .main-index {
   background-color: #ffffff;
 }
@@ -194,10 +199,14 @@ body {
 
 .filter-button {
   background-color: #82b3d3;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .reset-button {
   background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .catalog-title {
@@ -236,7 +245,6 @@ body {
 .accommodation-card-price {
   font-size: 18px;
   line-height: 21px;
-  text-align: right;
   color: #333333;
 }
 
@@ -246,12 +254,21 @@ body {
   text-transform: uppercase;
 }
 
+.button-more {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .button-wishlist {
   background-color: #82b3d3;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button-wishlist-added {
   background-color: #7db54f;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .pagination-link {
@@ -356,6 +373,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -370,6 +388,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  list-style-type: none;
 }
 
 .navigation-item .button {
@@ -395,7 +414,7 @@ body {
 
 .main-advantages-text {
   width: 400px;
-  padding: 102px 85px;
+  padding: 100px 85px;
   box-sizing: border-box;
 }
 
@@ -409,6 +428,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -422,6 +442,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .services-item {
@@ -452,6 +473,25 @@ body {
   padding: 96px 258px 104px;
 }
 
+.subscribe {
+  display: flex;
+}
+
+.subscribe .field {
+  width: 452px;
+  height: 52px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.subscribe-button {
+  display: block;
+  width: 232px;
+  height: 52px;
+}
+
 .page-footer-container {
   display: flex;
   justify-content: space-between;
@@ -467,8 +507,17 @@ body {
   flex-wrap: wrap;
 }
 
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .social-item {
   width: 48px;
+  height: 40px;
 }
 
 .contacts-phone {
@@ -486,6 +535,22 @@ body {
 
 .inner-header {
   padding: 35px 70px 70px;
+  margin-bottom: 50px;
+}
+
+.inner-header-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+  list-style-type: none;
+  margin-bottom: 40px;
 }
 
 .sorting-container {
@@ -521,8 +586,58 @@ body {
   margin-right: 70px;
 }
 
+.price-filter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.price-filter .field {
+  width: 143px;
+  height: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
 .sorting-buttons {
-  max-width: 191px;
+  width: 191px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.filter-button {
+  margin-bottom: 32px;
+  padding: 8px 50px;
+}
+
+.reset-button {
+  padding: 8px 50px;
+}
+
+.catalog-filter-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 151px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .container-filter {
@@ -533,13 +648,20 @@ body {
 }
 
 .catalog-title {
+  margin: 0;
+  padding: 0;
   min-width: 338px;
   margin-right: 200px;
 }
 
 .select-control {
+  height: 49px;
   width: 292px;
   margin-right: 70px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .view-type {
@@ -548,6 +670,7 @@ body {
   padding: 0;
   min-width: 160px;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .view-option {
@@ -556,17 +679,106 @@ body {
   gap: 8px;
 }
 
+.container-filter {
+  margin-bottom: 40px;
+}
+
+.accommodation-card-description-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.accommodation-card-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.accommodation-card-rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .accommodation-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
   margin: 0;
   gap: 20px;
   padding: 40px 70px 20px;
+  list-style-type: none;
 }
 
 .accommodation-card {
-  width: 300px;
+  width: 340px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.accommodation-img {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.accommodation-card-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.accommodation-card-description {
+  margin: 0;
+  padding: 0;
+}
+
+.accommodation-card-price {
+  margin: 0;
+  padding: 0;
+}
+
+.stars {
+  margin: 0;
+  padding: 0;
+}
+
+.card-rating {
+  margin: 0;
+  padding: 0;
+}
+
+.button-more {
+  display: block;
+  width: 140px;
+  padding: 8px 26px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+}
+
+.button-wishlist {
+  display: block;
+  width: 140px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+}
+
+.button-wishlist-added {
+  display: block;
+  width: 140px;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
 }
 
 .pagination {
@@ -577,12 +789,16 @@ body {
   padding: 0;
   padding: 40px 70px 60px;
   flex-wrap: wrap;
+  list-style-type: none;
+  gap: 8px;
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
-  margin-right: 8px;
+  height: 60px;
   padding: 12px 18px;
   box-sizing: border-box;
 }
@@ -597,4 +813,15 @@ body {
 
 .pagination-item:last-child {
   margin-right: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
