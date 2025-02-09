@@ -85,7 +85,6 @@ body {
   background-image: url("../images/icons/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 20px;
   height: 20px;
   content: "";
   display: inline-block;
@@ -134,10 +133,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-}
-
-.block-text-center-description {
-  text-align: center;
+  margin: 0;
 }
 
 .advantages-item-title {
@@ -200,6 +196,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .services-item-title::before {
@@ -230,6 +228,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
 }
 
 .call-to-action-title {
@@ -240,11 +239,13 @@ body {
   color: #000000;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .call-to-action-description {
   text-align: center;
   margin-bottom: 54px;
+  margin-top: 0;
 }
 
 .subscribe-to-title {
@@ -258,10 +259,12 @@ body {
 
 .subscribe-to-title-main {
   color: #ffffff;
+  margin: 0;
 }
 
 .subscribe-to-description {
   text-align: center;
+  margin: 0;
   margin-bottom: 54px;
 }
 
@@ -374,8 +377,13 @@ body {
 
 .card-rating {
   font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
+  line-height: 21px;
+  color: #333333;
+  background: #f2f2f2;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .button-more {
@@ -531,7 +539,18 @@ body {
 
 .block-text-center {
   margin: 0;
-  padding: 69px 290px;
+  padding: 69px 274px;
+}
+
+.block-text-center.second {
+  margin: 0;
+  padding: 64px 347.5px;
+}
+
+.block-text-center-description.second {
+  margin-bottom: 0;
+  align-items: flex-start;
+  padding-left: 7px;
 }
 
 .main-advantages {
@@ -646,7 +665,8 @@ body {
 .contacts-phone {
   margin: 0;
   padding: 0;
-  width: 335px;
+  width: 331px;
+  padding-right: 35px;
 }
 
 .html-academy-logo {
@@ -657,7 +677,7 @@ body {
 }
 
 .inner-header {
-  padding: 35px 70px 70px;
+  padding: 35px 70px 66px;
 }
 
 .inner-header-title {
@@ -734,7 +754,7 @@ body {
   background-color: #f2f2f2;
   padding-right: 30px;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .field-input-from {
@@ -776,6 +796,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: auto;
+  margin-bottom: 5px;
 }
 
 .filter-button {
@@ -819,7 +840,7 @@ body {
   display: flex;
   align-items: center;
   width: 1060px;
-  padding: 50px 70px 40px;
+  padding: 46px 70px 40px;
 }
 
 .catalog-title {
@@ -890,6 +911,7 @@ body {
 .accommodation-card-rating-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .accommodation-list {
@@ -897,9 +919,9 @@ body {
   grid-template-columns: repeat(3, 340px);
   margin: 0;
   gap: 20px;
-  padding: 40px 70px 20px;
+  padding: 0 70px 20px;
   list-style-type: none;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .accommodation-card {
@@ -943,6 +965,7 @@ body {
 .card-rating {
   margin: 0;
   padding: 0;
+  padding: 8px 0;
 }
 
 .button-more {
@@ -984,7 +1007,7 @@ body {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  padding: 40px 70px 60px;
+  padding: 25px 70px 35px;
   flex-wrap: wrap;
   list-style-type: none;
   gap: 8px;
@@ -1004,7 +1027,6 @@ body {
 .pagination-more {
   display: block;
   width: 60px;
-  margin-right: 8px;
   padding: 17px 20px;
   box-sizing: border-box;
 }
@@ -1025,7 +1047,7 @@ body {
 }
 
 .modal-window {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1;
@@ -1037,7 +1059,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 64px 70px;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  display: none;
 }
 
 .hotel-search-title-wrapper {
@@ -1056,7 +1080,7 @@ body {
   width: 52px;
   height: 52px;
   background-color: #f2f2f2;
-  outline: none;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1066,44 +1090,68 @@ body {
   flex-direction: column;
 }
 
+.field-group {
+  display: flex;
+  gap: 18px;
+}
+
 .search-checkin-date {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-bottom: 23px;
 }
 
 .form-label {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
-  padding: 0;
-  width: 137px;
+  min-width: 120px;
+  flex-shrink: 0;
   padding: 0;
   padding-top: 12px;
   padding-bottom: 12px;
+  gap: 10px;
 }
 
 .input-wrapper {
-  display: flex;
-  width: 440px;
-  height: 48px;
-  margin-bottom: 4px;
+  position: relative;
+  width: 100%;
 }
 
 .input-wrapper input {
+  padding: 12px 20px;
+  width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   background-color: #f2f2f2;
   color: #000000;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.calendar {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icons/date.svg");
+  border: none;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .input-note {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-left: 157px;
+  margin-top: 4px;
+  padding-left: 20px;
+  display: block;
 }
 
 .wrong-date {
@@ -1114,13 +1162,17 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  align-items: center;
+  margin-bottom: 23px;
 }
 
 .number-of-people-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
+}
+
+.buttons-adults-count {
+  display: flex;
 }
 
 .adults-count {
@@ -1132,21 +1184,21 @@ body {
   align-items: center;
 }
 
-.adults-count .form-label {
-  margin-right: 46px;
-}
-
 .adults-count input {
   width: 31px;
   height: 48px;
   padding: 14px 10px;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  outline: none;
+  border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+}
+
+.buttons-children-count {
+  display: flex;
 }
 
 .children-count {
@@ -1163,22 +1215,11 @@ body {
   padding: 14px 10px;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  outline: none;
+  border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-}
-
-.info {
-  width: 26px;
-  height: 26px;
-  background-color: #83b3d3;
-  background-image: url("../.svg");
-  background-repeat: no-repeat;
-  outline: none;
-  border-radius: 50%;
-  margin-right: 46px;
 }
 
 .button-minus,
@@ -1188,18 +1229,36 @@ body {
   padding: 14px 10px;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  outline: none;
+  border: none;
   margin: 0;
+  cursor: pointer;
+}
+
+.button-minus {
+  border-radius: 4px 0 0 4px;
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hotel-search-button {
-  width: 577px;
+  width: 100%;
   height: 60px;
   background-color: #83b3d3;
-  outline: none;
+  border: none;
   border-radius: 10px;
   padding: 18px 77px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icon {
@@ -1322,7 +1381,6 @@ body {
   margin-right: 28px;
   display: block;
   width: 13px;
-  height: 15px;
   position: relative;
 }
 
@@ -1395,7 +1453,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -1px;
 }
 
 .range-wrapper-inputs {
@@ -1441,10 +1499,16 @@ body {
 }
 
 .tooltip-icon {
-  width: 100%;
-  height: 100%;
   color: #242424;
   display: block;
+  background-color: #83b3d3;
+  background-image: url("../images/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
 }
 
 .tooltip-text {
@@ -1459,7 +1523,7 @@ body {
   display: block;
   width: 160px;
   position: absolute;
-  bottom: 100%;
+  top: 100%;
   margin-bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
@@ -1468,11 +1532,11 @@ body {
 }
 
 .tooltip {
-  position: absolute;
-  margin-top: 4px;
-  margin-left: 2px;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
+  fill: rgba(131, 179, 211, 1);
+  background: #ffffff;
+  position: relative;
 }
 
 .tooltip-toggle:hover + .tooltip-text,

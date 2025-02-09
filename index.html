@@ -87,35 +87,37 @@
           <section class="main-advantages">
             <img class="advantage-img" src="images/advantage-list-canyon.jpg" width="800" height="385" alt="Каньон">
             <div class="main-advantages-text">
-              <h3 class="advantages-item-title main-advantages-title">Там есть мост дьявола</h3>
+              <h3 class="advantages-item-title main-advantages-title">Там есть<br>мост дьявола</h3>
               <p class="advantages-item-description main-advantages-description">Да, по нему можно пройти! Если вы
                 осмелитесь, разумеется</p>
             </div>
           </section>
 
-          <section class="block-text-center">
-            <h2 class="block-text-center-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="block-text-center-description">Опытный персонал и качественное обслуживание!</p>
+          <section class="block-text-center second">
+            <h2 class="block-text-center-title second">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="block-text-center-description second">Опытный персонал и качественное обслуживание!</p>
           </section>
 
           <ul class="services-list">
             <li class="services-item services-item-1">
               <h3 class="services-item-title services-item-title-home">Жильё</h3>
-              <p class="services-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="services-item-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="services-item services-item-2">
               <h3 class="services-item-title services-item-title-food">Еда</h3>
-              <p class="services-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="services-item-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
+                разочаруетесь!</p>
             </li>
             <li class="services-item services-item-3">
               <h3 class="services-item-title services-item-title-souvenir">Сувениры</h3>
-              <p class="services-item-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="services-item-description">Не только китайского,<br>но и настоящего местного<br>производства!
+              </p>
             </li>
           </ul>
 
           <section class="call-to-action">
             <h2 class="call-to-action-title">Заинтересовались?</h2>
-            <p class="call-to-action-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            <p class="call-to-action-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
               предложения
               гостиниц в Седоне</p>
             <a class='button' href="#">Поиск гостиницы в Седоне</a>
@@ -126,7 +128,8 @@
       <footer class="page-footer">
         <section class="subscribe-to-letters subscribe-to-letters-main">
           <h2 class="subscribe-to-title subscribe-to-title-main">Подпишитесь на рассылку</h2>
-          <p class="subscribe-to-description subscribe-to-description-main">Только полезная информация и никакого спама,
+          <p class="subscribe-to-description subscribe-to-description-main">Только полезная информация и никакого
+            спама,<br>
             честное бойскаутское!</p>
           <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email">
@@ -206,7 +209,7 @@
         </div>
       </footer>
     </div>
-    <div class="modal-window visually-hidden" aria-hidden="true">
+    <div class="modal-window" aria-hidden="true">
       <section class="hotel-search">
         <div class="hotel-search-title-wrapper">
           <h2 class="hotel-search-title">Поиск гостиницы в Седоне</h2>
@@ -216,65 +219,68 @@
           </button>
         </div>
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group search-checkin-date">
+          <div class="field-group search-checkin-date">
             <label class="form-label" for="checkin-date">
               Дата Заезда:
             </label>
-          <div class="input-wrapper">
-            <input type="text" id="checkin-date" name="checkin-date" placeholder="27 апреля 2020">
-            <button class="calendar" type="button" aria-label="Выбрать дату заезда">
-              <span class="visually-hidden">Выбрать дату заезда</span></button>
-
+            <div class="input-wrapper">
+              <input type="text" id="checkin-date" name="checkin-date" placeholder="27 апреля 2020">
+              <button class="calendar" type="button" aria-label="Выбрать дату заезда">
+                <span class="visually-hidden">Выбрать дату заезда</span>
+              </button>
+              <small class="input-note wrong-date">Мы не можем отправить вас в прошлое.</small>
+            </div>
           </div>
-          <small class="input-note wrong-date">Мы не можем отправить вас в прошлое.</small>
-          </p>
 
-          <p class="field-group search-checkout-date">
+          <div class="field-group search-checkout-date">
             <label class="form-label" for="checkout-date">
               Дата Выезда:
             </label>
-          <div class="input-wrapper">
-            <input type="text" id="checkout-date" name="checkout-date" placeholder="1 сентября 2023">
-            <button class="calendar" type="button" aria-label="Выбрать дату выезда">
-              <span class="visually-hidden">Выбрать дату выезда</span></button>
-
+            <div class="input-wrapper">
+              <input type="text" id="checkout-date" name="checkout-date" placeholder="1 сентября 2023">
+              <button class="calendar" type="button" aria-label="Выбрать дату выезда">
+                <span class="visually-hidden">Выбрать дату выезда</span>
+              </button>
+              <small class="input-note">На эти даты есть свободные номера. Пока есть.</small>
+            </div>
           </div>
-          <small class="input-note">На эти даты есть свободные номера. Пока есть.</small>
-          </p>
           <div class="number-of-people-wrapper">
-            <p class="field-group adults-count">
+            <div class="field-group adults-count">
               <label class="form-label" for="adults-number">
                 Взрослые:
               </label>
-              <button class="button-minus" type="button" aria-label="Уменьшить количество взрослых">
-                <span class="visually-hidden">Уменьшить</span></button>
-              <input type="text" id="adults-number" name="adults-number" placeholder="2">
-              <button class="button-plus" type="button" aria-label="Увеличить количество взрослых">
-                <span class="visually-hidden">Увеличить</span></button>
-            </p>
+              <div class="buttons-adults-count">
+                <button class="button-minus" type="button" aria-label="Уменьшить количество взрослых">
+                  <span class="visually-hidden">Уменьшить</span></button>
+                <input type="text" id="adults-number" name="adults-number" placeholder="2">
+                <button class="button-plus" type="button" aria-label="Увеличить количество взрослых">
+                  <span class="visually-hidden">Увеличить</span></button>
+              </div>
+            </div>
 
-            <p class="field-group children-count">
+            <div class="field-group children-count">
               <span class="form-label">
                 <label class="form-label" for="children-number">
-                  Дети:</label>
-                <span class="tooltip info">
-                  <button class="tooltip-toggle" type="button">
-                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor">
-                      <path
-                        d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z" />
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
-                    которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
+                  Дети:
+                  <span class="tooltip info">
+                    <span class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+
+                      </svg>
+                    </span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                      которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </label>
               </span>
-              <button class="button-minus" type="button" aria-label="Уменьшить количество детей">
-                <span class="visually-hidden">Уменьшить</span></button>
-              <input type="text" id="adults-number" name="children-number" placeholder="2">
-              <button class="button-plus" type="button" aria-label="Увеличить количество детей">
-                <span class="visually-hidden">Увеличить</span></button>
-            </p>
+              <div class="buttons-children-count">
+                <button class="button-minus" type="button" aria-label="Уменьшить количество детей">
+                  <span class="visually-hidden">Уменьшить</span></button>
+                <input type="text" id="adults-number" name="children-number" placeholder="2">
+                <button class="button-plus" type="button" aria-label="Увеличить количество детей">
+                  <span class="visually-hidden">Увеличить</span></button>
+              </div>
+            </div>
           </div>
           <button class="button hotel-search-button" type="submit">Найти</button>
         </form>
