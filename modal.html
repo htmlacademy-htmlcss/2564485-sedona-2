@@ -1,0 +1,84 @@
+<body>
+  <div class="modal-window" aria-hidden="true" data-test="modal">
+    <section class="hotel-search">
+      <div class="hotel-search-title-wrapper">
+        <h2 class="hotel-search-title">Поиск гостиницы в Седоне</h2>
+        <button class="close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close-icon"> width="21" height="21" viewBox="0 0 21 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.4905 4.78288L16.1982 3.49057L10.4905 9.19826L4.78279 3.49057L3.49048 4.78288L9.19817 10.4906L3.49048 16.1983L4.78279 17.4906L10.4905 11.7829L16.1982 17.4906L17.4905 16.1983L11.7828 10.4906L17.4905 4.78288Z"
+              fill="black" />
+          </svg>
+        </button>
+      </div>
+      <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="field-group search-checkin-date">
+          <label class="form-label" for="checkin-date">
+            Дата Заезда:
+          </label>
+          <div class="input-wrapper">
+            <input type="text" id="checkin-date" name="checkin-date" placeholder="27 апреля 2020">
+            <button class="calendar" type="button" aria-label="Выбрать дату заезда">
+              <span class="visually-hidden">Выбрать дату заезда</span>
+            </button>
+            <small class="input-note wrong-date">Мы не можем отправить вас в прошлое.</small>
+          </div>
+        </div>
+
+        <div class="field-group search-checkout-date">
+          <label class="form-label" for="checkout-date">
+            Дата Выезда:
+          </label>
+          <div class="input-wrapper">
+            <input type="text" id="checkout-date" name="checkout-date" placeholder="1 сентября 2023">
+            <button class="calendar" type="button" aria-label="Выбрать дату выезда">
+              <span class="visually-hidden">Выбрать дату выезда</span>
+            </button>
+            <small class="input-note">На эти даты есть свободные номера. Пока есть.</small>
+          </div>
+        </div>
+        <div class="number-of-people-wrapper">
+          <div class="field-group adults-count">
+            <label class="form-label" for="adults-number">
+              Взрослые:
+            </label>
+            <div class="buttons-adults-count">
+              <button class="button-minus" type="button" aria-label="Уменьшить количество взрослых">
+                <span class="visually-hidden">Уменьшить</span></button>
+              <input type="text" id="adults-number" name="adults-number" placeholder="2">
+              <button class="button-plus" type="button" aria-label="Увеличить количество взрослых">
+                <span class="visually-hidden">Увеличить</span></button>
+            </div>
+          </div>
+
+          <div class="field-group children-count">
+            <span class="form-label">
+              <label class="form-label" for="children-number">
+                Дети:
+                <span class="tooltip info">
+                  <span class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+
+                    </svg>
+                  </span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </label>
+            </span>
+            <div class="buttons-children-count">
+              <button class="button-minus" type="button" aria-label="Уменьшить количество детей">
+                <span class="visually-hidden">Уменьшить</span></button>
+              <input type="text" id="children-number" name="children-number" placeholder="2">
+              <button class="button-plus" type="button" aria-label="Увеличить количество детей">
+                <span class="visually-hidden">Увеличить</span></button>
+            </div>
+          </div>
+        </div>
+        <button class="button hotel-search-button" type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
+</body>

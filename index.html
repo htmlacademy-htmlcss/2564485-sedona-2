@@ -9,7 +9,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class='navigation-logo' href="index.html">
             <img class='logo' src="images/logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
@@ -46,15 +46,15 @@
         </nav>
       </header>
 
-      <main class="main-index">
+      <main class="main-index" data-test="main">
         <div class="main-container">
-          <section class="hero">
+          <section class="hero" data-test="hero">
             <h1 class="visually-hidden">Седона</h1>
             <img class="main-image-text" src="images/welcome-text.svg" width="458" height="352"
               alt="Текст на главном изображении">
           </section>
 
-          <section class="block-text-center">
+          <section class="block-text-center" data-test="advantages">
             <h2 class="block-text-center-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="block-text-center-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </section>
@@ -93,7 +93,7 @@
             </div>
           </section>
 
-          <section class="block-text-center second">
+          <section class="block-text-center second" data-test="service">
             <h2 class="block-text-center-title second">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="block-text-center-description second">Опытный персонал и качественное обслуживание!</p>
           </section>
@@ -115,7 +115,7 @@
             </li>
           </ul>
 
-          <section class="call-to-action">
+          <section class="call-to-action" data-test="search">
             <h2 class="call-to-action-title">Заинтересовались?</h2>
             <p class="call-to-action-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
               предложения
@@ -126,7 +126,7 @@
       </main>
 
       <footer class="page-footer">
-        <section class="subscribe-to-letters subscribe-to-letters-main">
+        <section class="subscribe-to-letters subscribe-to-letters-main" data-test="subscribe">
           <h2 class="subscribe-to-title subscribe-to-title-main">Подпишитесь на рассылку</h2>
           <p class="subscribe-to-description subscribe-to-description-main">Только полезная информация и никакого
             спама,<br>
@@ -141,7 +141,7 @@
           </form>
         </section>
 
-        <div class="page-footer-container">
+        <div class="page-footer-container" data-test="footer">
           <h2 class="visually-hidden" hidden>Контакты</h2>
           <div class="footer-socials">
             <ul class="social-list">
@@ -209,7 +209,7 @@
         </div>
       </footer>
     </div>
-    <div class="modal-window" aria-hidden="true">
+    <div class="modal-window modal-window-hidden" aria-hidden="true" data-test="modal">
       <section class="hotel-search">
         <div class="hotel-search-title-wrapper">
           <h2 class="hotel-search-title">Поиск гостиницы в Седоне</h2>

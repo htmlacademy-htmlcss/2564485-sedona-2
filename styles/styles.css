@@ -1061,6 +1061,9 @@ body {
   padding: 64px 70px;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
+}
+
+.modal-window-hidden {
   display: none;
 }
 
@@ -1099,12 +1102,12 @@ body {
 }
 
 .close-button:focus-visible {
-  background-color: #rgba(230, 230, 230, 1);
+  background-color: rgba(230, 230, 230, 1);
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .close-button:active {
-  rgba(230, 230, 230, 1);
+  background-color: rgba(230, 230, 230, 1);
 }
 
 .close-button:active > .close-icon {

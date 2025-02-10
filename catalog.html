@@ -9,7 +9,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class='navigation-logo' href="index.html">
             <img class='logo' src="images/logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
@@ -46,7 +46,7 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -65,7 +65,7 @@
               <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-          <form class="sorting-container">
+          <form class="sorting-container" data-test="filter">
             <div class="sorting-left-column">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -169,7 +169,7 @@
 
     </header>
 
-    <section class="catalog-accommodation">
+    <section class="catalog-accommodation" data-test="catalog">
       <div class="container-filter">
         <h2 class="catalog-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
@@ -328,7 +328,7 @@
     </main>
 
     <footer class="page-footer">
-      <section class="subscribe-to-letters">
+      <section class="subscribe-to-letters" data-test="subscribe">
         <h2 class="subscribe-to-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-to-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
@@ -341,7 +341,7 @@
         </form>
       </section>
 
-      <div class="page-footer-container">
+      <div class="page-footer-container" data-test="footer">
         <h2 class="visually-hidden" hidden>Контакты</h2>
         <div class="footer-socials">
           <ul class="social-list">
