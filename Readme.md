@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Tania Novikova](https://up.htmlacademy.ru/htmlcss-individual/2/user/2564485).
-* Наставник: `Неизвестно`.
+- Студент: [Tania Novikova](https://up.htmlacademy.ru/htmlcss-individual/2/user/2564485).
+- Наставник: [Ярослав Шевцов]().
+- Сайт: [Мой проект Седона](https://tatiana2024ite.github.io/2564485-sedona-2/)
 
 ---
 
