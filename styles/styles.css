@@ -60,6 +60,10 @@ body {
   position: relative;
 }
 
+.navigation-link:hover {
+  opacity: 0.7;
+}
+
 .navigation-link-current::after {
   content: "";
   position: absolute;
@@ -260,6 +264,7 @@ body {
 .subscribe-to-title-main {
   color: #ffffff;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-to-description {
@@ -418,7 +423,7 @@ body {
 }
 
 .hero {
-  background-image: url("../images/vector.svg"), url("../images/index-background.jpg");
+  background-image: url("../images/page-break.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #82b3d3;
@@ -540,6 +545,10 @@ body {
 .block-text-center {
   margin: 0;
   padding: 69px 274px;
+}
+
+.block-text-center-description {
+  text-align: center;
 }
 
 .block-text-center.second {
@@ -665,7 +674,7 @@ body {
 .contacts-phone {
   margin: 0;
   padding: 0;
-  width: 331px;
+  min-width: 331px;
   padding-right: 35px;
 }
 
@@ -737,7 +746,6 @@ body {
 }
 
 .price-filter .field {
-  appearance: none;
   width: 143px;
   height: 48px;
   padding-top: 12px;
@@ -791,6 +799,18 @@ body {
   transform: translateY(-50%);
 }
 
+.field-input-to:focus,
+.field-input-from:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+
+.field-input-to:hover,
+.field-input-from:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+
 .sorting-buttons {
   width: 191px;
   display: flex;
@@ -804,8 +824,42 @@ body {
   padding: 8px 50px;
 }
 
+.filter-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.filter-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.filter-button:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 .reset-button {
   padding: 8px 50px;
+}
+
+.reset-button:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.reset-button:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-button:disabled {
+  color: rgba(255, 255, 255, 1);
 }
 
 .catalog-filter-title {
@@ -896,6 +950,14 @@ body {
   border: 2px solid #000000;
 }
 
+.view-option:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.view-option:active {
+  border: 2px solid #000000;
+}
+
 .accommodation-card-description-container {
   display: flex;
   justify-content: space-between;
@@ -941,6 +1003,18 @@ body {
   object-fit: contain;
 }
 
+.accommodation-img:hover {
+  opacity: 60%;
+}
+
+.accommodation-img:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.accommodation-img:active {
+  opacity: 30%;
+}
+
 .accommodation-card-title {
   margin: 0;
   padding: 0;
@@ -979,6 +1053,24 @@ body {
   height: 36px;
 }
 
+.button-more:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.button-more:focus {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.button-more:active {
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-more:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 .button-wishlist {
   display: block;
   width: 140px;
@@ -990,6 +1082,24 @@ body {
   height: 36px;
 }
 
+.button-wishlist:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button-wishlist:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button-wishlist:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-wishlist:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 .button-wishlist-added {
   display: block;
   width: 140px;
@@ -999,6 +1109,24 @@ body {
   align-items: center;
   justify-content: center;
   height: 36px;
+}
+
+.button-wishlist-added:hover {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+.button-wishlist-added:focus {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+.button-wishlist-added:active {
+  background-color: rgba(125, 181, 79, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-wishlist-added:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .pagination {
@@ -1265,14 +1393,14 @@ body {
 
 .button-minus {
   border-radius: 4px 0 0 4px;
-  background-image: url("../images/icons/minus.svg");
+  background-image: url("../images/icons/button-minus.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-plus {
   border-radius: 0 4px 4px 0;
-  background-image: url("../images/icons/plus.svg");
+  background-image: url("../images/icons/button-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1408,21 +1536,23 @@ body {
 
 .breadcrumbs-link:first-of-type {
   margin-right: 28px;
-  display: block;
-  width: 13px;
+  display: flex;
+  align-items: center;
+  min-width: 13px;
   position: relative;
 }
 
 .breadcrumbs-link:first-of-type::after {
   content: "";
-  display: inline-block;
+  display: block;
   width: 7px;
   height: 10px;
   background-image: url("../images/icons/arrow-icon.svg");
   background-repeat: no-repeat;
   position: absolute;
-  margin-top: 5px;
-  margin-left: 10px;
+  top: 50%;
+  left: calc(100% + 10px);
+  transform: translateY(-50%);
 }
 
 .breadcrumbs-item:last-child .breadcrumbs-link::after {
@@ -1473,6 +1603,14 @@ body {
   border: none;
   border-radius: 20%;
   cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.range-toggle:active {
+  outline: 2px solid rgba(131, 179, 211, 1);
 }
 
 .toggle-min {
@@ -1596,12 +1734,21 @@ body {
   outline: 2px solid rgba(131, 179, 211, 1);
 }
 
+.control:hover .control-mark {
+  background-color: rgba(230, 230, 230, 1);
+
+}
+
+.control:hover .control-label {
+  color: rgba(230, 230, 230, 1);
+}
+
 .control-mark:focus {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("../images/Vector-tick.svg");
+  background-image: url("../images/icon-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 14px;
@@ -1627,6 +1774,7 @@ body {
 /* Label */
 .control-label {
   line-height: 23px;
+  cursor: pointer;
 }
 
 .catalog-filter-list {
